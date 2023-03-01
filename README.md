@@ -2,7 +2,7 @@
 
 # Multi-Sort Analysis
 
-**Note**: The timings were carried out on a MacBook Pro (15-inch, 2019) with 2.3GHz 8-Core Intel Core i9 CPU and 16GB of 2400 MHz DDR4 memory.
+###### Note: Timings carried out on a MacBook Pro (15-inch, 2019) with 2.3GHz 8-Core Intel Core i9 CPU and 16GB of 2400 MHz DDR4 memory.
 
 ---
 
@@ -16,12 +16,74 @@ Why are there so many algorithms for the same task? Algorithms vary by how quick
 
 ## Procedure
 
-<img src="Assets/Procedure.png">
+<p align="center">
+<img src="Assets/Procedure.png" width="75%">
+</p>
 
 #### Setup
 
-- Each algorithm will be timed on how long it takes to sort a specific input array from smallest to largest. Input arrays have two attributes: size and order of elements. The size of the array, N, is the number of integers in the array. N ranges from 2,000 to 30,000 (inclusive) by 2,000 increments. The order of the elements in the input array can be random, sorted (smallest to largest), and reverse sorted (largest to smallest).
+- Each algorithm will be timed on how long it takes to sort a specific input array into ascending order. Input arrays have two attributes: size and order of elements. The size of the array, N, is the number of integers in the array. N ranges from 2,000 to 30,000 (inclusive) by 2,000 increments. The order of the elements in the input array can be random, sorted (ascending order), and reverse sorted (descending order).
 
 #### Execution
 
 - All five sorting algorithms are tested on the same 45 distinct input arrays ({N=2,000 , Random}, {N=2,000 , Sorted}, ... , {N=30,000 , Reversed}). This means the input array with 22,000 integers in random order is the same array that all five sorting algorithms will be tested on. The sorting algorithms will sort an input array 10 times and the average time will be recorded.
+
+---
+
+## Results
+
+#### Merge Sort
+
+<img src="Assets/Merge.png">
+
+#### Heap Sort
+
+<img src="Assets/Heap.png">
+
+#### Quick Sort
+
+<img src="Assets/Quick.png">
+
+#### Insertion Sort
+
+<img src="Assets/Insertion.png">
+
+#### In Place Merge Sort
+
+<img src="Assets/InPlaceMerge.png">
+
+---
+
+## Analysis
+
+From the data collected Barnett concluded:
+
+###### Merge Sort:
+
+| Random     | Sorted     | Reverse    |
+| ---------- | ---------- | ---------- |
+| O(nlog(n)) | O(nlog(n)) | O(nlog(n)) |
+
+###### Heap Sort:
+
+| Random     | Sorted     | Reverse    |
+| ---------- | ---------- | ---------- |
+| O(nlog(n)) | O(nlog(n)) | O(nlog(n)) |
+
+###### Quick Sort:
+
+| Random     | Sorted           | Reverse          |
+| ---------- | ---------------- | ---------------- |
+| O(nlog(n)) | O(n<sup>2</sup>) | O(n<sup>2</sup>) |
+
+###### Insertion Sort:
+
+| Random           | Sorted | Reverse          |
+| ---------------- | ------ | ---------------- |
+| O(n<sup>2</sup>) | O(n)   | O(n<sup>2</sup>) |
+
+###### In Place Merge Sort:
+
+| Random           | Sorted     | Reverse          |
+| ---------------- | ---------- | ---------------- |
+| O(n<sup>2</sup>) | O(nlog(n)) | O(n<sup>2</sup>) |
