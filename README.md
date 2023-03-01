@@ -14,6 +14,16 @@ Why are there so many algorithms for the same task? Algorithms vary by how quick
 
 ---
 
+## Development Info
+
+The Multi-Sort Analysis is conducted by a single developer, [Reese Barnett](https://www.linkedin.com/in/reesebarnett2024). Barnett is responsible for all the code. This project uses an iterative development process called _**Agile**_ that allows Barnett to evolve requirements and solutions over the lifetime of the application.
+
+- Developer(s): [Reese Barnett](https://www.linkedin.com/in/reesebarnett2024)
+- Programming Technologie(s): CLion, chrono, climits, cmake
+- Language(s): C++
+
+---
+
 ## Procedure
 
 <p align="center">
